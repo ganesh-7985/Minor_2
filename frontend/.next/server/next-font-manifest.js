@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/shankarganesh/Coding/Dev-Projects/minor-2/Intelligent_Video_Recording_for_CCTV/frontend/app/layout\":[\"static/media/ca53ebb07f987e8d-s.p.woff2\",\"static/media/569ce4b8f30dc480-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"
