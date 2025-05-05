@@ -18,9 +18,9 @@ def _open_capture(index: int | str = 0) -> cv2.VideoCapture:
     sys = platform.system()
     if sys == "Windows":
         return cv2.VideoCapture(index, cv2.CAP_DSHOW)
-    if sys == "Darwin":                          # macOS
+    if sys == "Darwin":                        
         return cv2.VideoCapture(index, cv2.CAP_AVFOUNDATION)
-    return cv2.VideoCapture(index)               # Linux / default
+    return cv2.VideoCapture(index)               
 
 
 # ────────────────────────────────────────────────────────────────
@@ -104,7 +104,7 @@ class LiveCaptureManager:
             now = time.time()
             wall_str = time.strftime("%H:%M:%S", time.localtime(now))
 
-            # detect objects every frame (cheap model assumed)
+            # detect objects every frame
             objs = detect_objects_yolo(yolo, frame, names, CONFIDENCE_THRESHOLD)
             wanted_present = bool(objs)
 

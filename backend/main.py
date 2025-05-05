@@ -6,7 +6,9 @@ from typing import Optional
 
 from config import OUTPUT_DIR
 from processing import process_video
-from realtime_processor import LiveCaptureManager
+# from realtime_processor import LiveCaptureManager
+from live import LiveCaptureManager
+
 
 app = FastAPI(title="CCTV Optimiser API")
 app.add_middleware(

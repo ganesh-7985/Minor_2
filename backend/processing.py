@@ -12,7 +12,6 @@ from config import (
     RECORD_TIMEOUT, CONFIDENCE_THRESHOLD, OUTPUT_DIR
 )
 
-
 def load_yolo_model():
     return YOLO(YOLO_MODEL_PATH)
 
@@ -53,9 +52,6 @@ def detect_objects_yolo(model, frame, classes,
 
 
 def process_video(video_path: str) -> Tuple[list, str]:
-    """
-    Exactly what already worked for you – kept verbatim.
-    """
     logging.basicConfig(level=logging.INFO)
     model   = load_yolo_model()
     classes = load_classes()
